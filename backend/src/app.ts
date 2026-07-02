@@ -1,6 +1,6 @@
 import fastify from 'fastify';
 import { alunoRoutes } from './modules/alunos/alunos.routes.js';
-// Instancia o Fastify ativando o Logger nativo para rastreabilidade de requisições e erros
+
 const app = fastify({
   logger: true
 });
@@ -18,8 +18,5 @@ app.register(alunoRoutes, { prefix: '/api' });
 
 
 
-
-
-// No futuro próximo, registraremos as rotas dos módulos aqui embaixo
 
 export { app };
